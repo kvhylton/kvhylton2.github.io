@@ -1,0 +1,916 @@
+body {
+  /*background-color: #baabda; */
+  /*background-color: rgba(136,0,28); */
+  /*background-color: rgba(150, 247, 210, 0.5);*/
+  background-color: rgba(116, 92, 151, 0.5);
+  padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  color: white;
+}
+.logo {
+  float: left;
+  width: 15%;
+  height: 20%;
+  top: 5px;
+  animation: logo 5s 1;
+}
+@keyframes logo {
+  0%{transform: scale(0);}
+  100%{transform: scale(1);}
+}
+.companyname {
+  width: 80%;
+  font-family: "Palatino Linotype";
+  animation-name: companyname;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  text-align: center;
+  /* text-shadow: -1px 0 #480032, 0 1px #480032, 1px 0 #480032, 0 -1px #480032; */
+  /*text-shadow: 10px 5px 7px /*#f0f696 #fa0559; */
+  /*color: #fcb1b1;*/
+  color: #39375b;
+  font-size: 3em;
+}
+@keyframes companyname {
+  from {transform: translateY(0px);}
+  to {transform: translateY(50px);}
+}
+.companyslogan {
+  width: 80%;
+  animation-name: companyslogan;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction:;
+  text-align: center;
+  /*color: #a374d5;*/
+  /*color: #f5e965;*/
+  color: lawngreen;
+}
+@keyframes companyslogan {
+  from {transform: translateY(-50px);}
+  to {transform: translateY(0px);}
+}
+.slideshow{
+ overflow: hidden;
+ height: 60px;
+ width: 100%;
+ /*border: solid red;*/
+}
+.slidewrap {
+  width: 400%;
+  height: 100%;
+  animation-name: slideshow;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+.slide {
+  float: left;
+  height: 100%;
+  width: 25%;}
+}
+.slide p {
+  text-align: center;
+}
+.slide:nth-child(1) {
+  background-color: #84253e;
+  text-align: center;
+}
+.slide:nth-child(2) {
+  background-color: #a6cb12;
+  text-align: center;
+  color: #801336;
+}
+.slide i {
+  font-size: 10px;
+}
+.slide:nth-child(3) {
+  background-color: #e00543;
+  text-align: center;
+}
+@keyframes slideshow {
+  0% {margin-left: 0px;}
+  15% {margin-left: -100%;}
+  25% {margin-left: -100%;}
+  40% {margin-left: -200%;}
+  50% {margin-left: -200%;}
+  90% {margin-left: 0%;}
+  100% {margin-left: 0%;}
+}
+.imagewithtext img {
+  width: 100%;
+  height: 100%;
+}
+.imagewithtext {
+  width: 100%;
+  height: 700px;
+  margin: auto;
+  position: relative;
+  /*border: solid green;*/
+}
+.message {
+  position: absolute;
+  top: 3%;
+  left: 43%;
+  width: 54%;
+  background-color: rgba(106,90,205,0.3) ;
+  border: solid slateblue;
+  color: mediumblue;
+  text-align: justify;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.heroImage {
+  /*border: dashed blue;*/
+  height: 450px;
+  position: relative;
+  background-image: /*linear-gradient(to left, rgba(255,215,0,0.2), rgba(199,21,133,0.4) ),*/ url("images/bannerwine.jpg");
+  background-repeat: no-repeat;
+  background-position: center;background-size: 100% 100%;
+}
+.herotext {
+  position: absolute;
+  top: 35%;
+  left: 3%;
+  width: 60%;
+  color: papayawhip;
+  text-align: center;
+  line-height: 2;
+}
+.ourwine {
+  font-family: "Papyrus";
+  color: mediumvioletred;
+}
+.productcontainer {
+  width: 100%;
+  height: 600px;
+  /*border: solid pink;*/
+}
+.productcontainer img{
+  margin-left: 200px;
+  margin-top: 40px;
+  width: 30%;
+  height: 60%;
+}
+.productcontainer p {
+  text-align: center;
+  font-family: century;
+  color: #5f1854;
+}
+.modalclose {
+  color: black;
+  /*float: right;*/
+  text-decoration: none;
+}
+/* MODAL WINDOW*/
+.linkModal1 {
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  margin-left: 200px;
+  background-color: #a8026f;
+  /* 35013f */
+  border-radius: 30px;
+  padding: 10px;
+}
+.linkModal1:hover {
+  background-color: #003f5c;
+  color: #ff6361;
+}
+.modalWindow1 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(230,230,250,0.2);
+  opacity: 0;
+  pointer-events: none;
+}
+.modalWindow1:target {
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease-in 1s;
+}
+.msgText1 {
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  background-color: white;
+  top: 200px;
+  left: 600px;
+  padding: 20px;
+}
+.msgText1 h3 {
+  /*background-color: #caa5f1;*/
+  /*background-color: #caa5f1;*/
+  background-color: MEDIUMSLATEBLUE;
+  padding: 10px;
+  /*color: #caa5f1;*/
+  color: lavender;
+  /*float: left;*/
+}
+.wine1div {
+  float: left;
+  /*border: solid blue;*/
+  width: 50%;
+  margin-top: 0%;
+  margin-right: 0px;
+  text-align: center;
+  line-height: 2;
+  color: steelblue;
+}
+.msgText1 p {
+  color: steelblue;
+}
+.msgText1 img {
+  width: 20%;
+  margin-left: 10%;
+}
+.modal-close1 {
+  margin: 20px;
+  padding: 12px;
+  border-radius: 20px;
+  background-color: thistle;
+  color: white;
+  text-decoration: none;
+  float: right;
+}
+.modal-close1:hover {
+  color: red;
+  text-decoration: none;
+}
+/*END MODAL WINDOW*/
+/*MODAL 2*/
+.linkModal2 {
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  margin-left: 200px;
+  background-color: #a8026f;
+  /* 35013f */
+  border-radius: 30px;
+  padding: 10px;
+}
+.linkModal2:hover {
+  background-color: #003f5c;
+  color: #ff6361;
+}
+.modalWindow2 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(230,230,250,0.2);
+  opacity: 0;
+  pointer-events: none;
+}
+.modalWindow2:target {
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease-in 1s;
+}
+.msgText2 {
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  background-color: white;
+  top: 200px;
+  left: 600px;
+  padding: 20px;
+}
+.msgText2 h3 {
+  /*background-color: #caa5f1;*/
+  background-color: MEDIUMSLATEBLUE;
+  padding: 10px;
+  /*color: #caa5f1;*/
+  color: lavender;
+  /*float: left;*/
+}
+.wine2div {
+  float: left;
+  /*border: solid blue;*/
+  width: 50%;
+  margin-top: 0%;
+  margin-right: 0px;
+  text-align: center;
+  line-height: 2;
+  color: steelblue;
+}
+.msgText2 p {
+  color: steelblue;
+}
+.msgText2 img {
+  width: 20%;
+  margin-left: 10%;
+}
+.modal-close2 {
+  margin: 20px;
+  padding: 12px;
+  border-radius: 20px;
+  background-color: thistle;
+  color: white;
+  text-decoration: none;
+  float: right;
+}
+.modal-close2:hover {
+  color: red;
+  text-decoration: none;
+}
+/*END OF MODAL 2*/
+/*START OF MODAL 3*/
+.linkModal3 {
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  margin-left: 200px;
+  background-color: #a8026f;
+  /* 35013f */
+  border-radius: 30px;
+  padding: 10px;
+}
+.linkModal3:hover {
+  background-color: #003f5c;
+  color: #ff6361;
+}
+.modalWindow3 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(230,230,250,0.2);
+  opacity: 0;
+  pointer-events: none;
+}
+.modalWindow3:target {
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease-in 1s;
+}
+.msgText3 {
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  background-color: white;
+  top: 200px;
+  left: 600px;
+  padding: 20px;
+}
+.msgText3 h3 {
+  /*background-color: #caa5f1;*/
+  background-color: MEDIUMSLATEBLUE;
+  padding: 10px;
+  /*color: #caa5f1;*/
+  color: lavender;
+  /*float: left;*/
+}
+.wine3div {
+  float: left;
+  /*border: solid blue;*/
+  width: 50%;
+  margin-top: 0%;
+  margin-right: 0px;
+  text-align: center;
+  line-height: 2;
+  color: steelblue;
+}
+.msgText3 p {
+  color: steelblue;
+}
+.msgText3 img {
+  width: 20%;
+  margin-left: 10%;
+}
+.modal-close3 {
+  margin: 20px;
+  padding: 12px;
+  border-radius: 20px;
+  background-color: thistle;
+  color: white;
+  text-decoration: none;
+  float: right;
+}
+.modal-close3:hover {
+  color: red;
+  text-decoration: none;
+}
+/*END OF MODAL 3*/
+.redwine {
+  float: left;
+  width: 33%;
+  height: 600px;
+  /*border: solid mediumvioletred;*/
+}
+.redwine p {
+
+}
+.pinkwine {
+  float: left;
+  width: 32.4%;
+  height: 600px;
+  /*border: solid violet;*/
+}
+.pinkwine p {
+
+}
+.whitewine {
+  float: left;
+  width: 33%;
+  height: 600px;
+  /*border: solid blueviolet;*/
+}
+.whitewine p {
+
+}
+.packcontainer {
+  width: 100%;
+  height: 500px;
+  /*border: solid pink;*/
+}
+.packcontainer img {
+  width: 90%;
+  height: 90%;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+.packcontainer p {
+  text-align: center;
+  color: #5f1854;
+  /*color: #39065a;*/
+}
+.packcontainer a {
+  margin-left: 200px;
+  /*background-color: #a8026f;*/
+  /* 35013f */
+  border-radius: 30px;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.giftstitle {
+  font-family: Papyrus;
+  color: mediumvioletred;
+}
+.pack1 {
+  float: left;
+  width: 33%;
+  height: 500px;
+  /*border: solid mediumvioletred;*/
+}
+.pack2 {
+  float: left;
+  width: 32.4%;
+  height: 500px;
+  /*border: solid violet;*/
+}
+.pack3 {
+  float: left;
+  width: 33%;
+  height: 500px;
+  /*border: solid blueviolet;*/
+}
+/* MODAL WINDOW*/
+.linkModalpack1 {
+  font-size: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #a8026f;
+  border-radius: 30px;
+  padding: 10px;
+}
+.linkModalpack1:hover {
+  background-color: #003f5c;
+  color: #ff6361;
+}
+.modalpackWindow1 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(230,230,250,0.2);
+  opacity: 0;
+  pointer-events: none;
+}
+.modalpackWindow1:target {
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease-in 1s;
+}
+.msgTextpack1 {
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  background-color: lavenderblush;
+  top: 200px;
+  left: 600px;
+  padding: 20px;
+}
+.msgTextpack1 h3 {
+  /*background-color: #caa5f1;*/
+  background-color: MEDIUMSLATEBLUE;
+  padding: 10px;
+  /*color: #caa5f1;*/
+  color: lavender;
+  /*float: left;*/
+}
+.pack1div {
+  float: left;
+  /*border: solid blue;*/
+  width: 50%;
+  margin-top: 0%;
+  margin-right: 0px;
+  text-align: center;
+  line-height: 1.5;
+  color: steelblue;
+}
+.msgTextpack1 img {
+  width: 40%;
+  height: 60%;
+  margin-left: 55%;
+  margin-top: -56%;
+}
+.msgTextpack1 p{
+  color: steelblue;
+}
+.modal-closepack1 {
+  margin: 20px;
+  padding: 12px;
+  border-radius: 20px;
+  background-color: thistle;
+  color: white;
+  text-decoration: none;
+  float: right;
+}
+.modal-closepack1:hover {
+  color: red;
+  text-decoration: none;
+}
+/*MODAL PACK 2*/
+.linkModalpack2 {
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  margin-left: 200px;
+  background-color: #a8026f;
+  border-radius: 30px;
+  padding: 10px;
+}
+.linkModalpack2:hover {
+  background-color: #003f5c;
+  color: #ff6361;
+}
+.modalpackWindow2 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(230,230,250,0.2);
+  opacity: 0;
+  pointer-events: none;
+}
+.modalpackWindow2:target {
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease-in 1s;
+}
+.msgTextpack2 {
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  background-color: lavenderblush;
+  top: 200px;
+  left: 600px;
+  padding: 20px;
+}
+.msgTextpack2 h3 {
+  /*background-color: #caa5f1;*/
+  background-color: MEDIUMSLATEBLUE;
+  padding: 10px;
+  /*color: #caa5f1;*/
+  color: lavender;
+  /*float: left;*/
+}
+.pack2div {
+  float: left;
+  /*border: solid blue;*/
+  width: 50%;
+  margin-top: 0%;
+  margin-right: 0px;
+  text-align: center;
+  line-height: 1.5;
+  color: steelblue;
+}
+.msgTextpack2 img {
+  /*border: solid red;*/
+  margin-top: 8%;
+  width: 45%;
+  height: 60%;
+  float: right;
+}
+.msgTextpack2 p {
+  color: steelblue;
+}
+.modal-closepack2 {
+  margin: 20px;
+  padding: 12px;
+  border-radius: 20px;
+  background-color: thistle;
+  color: white;
+  text-decoration: none;
+  float: right;
+}
+.modal-closepack2:hover {
+  color: red;
+  text-decoration: none;
+}
+/*MODAL PACK 3*/
+.linkModalpack3 {
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  margin-left: 200px;
+  background-color: #a8026f;
+  border-radius: 30px;
+  padding: 10px;
+}
+.linkModalpack3:hover {
+  background-color: #003f5c;
+  color: #ff6361;
+}
+.modalpackWindow3 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(230,230,250,0.2);
+  opacity: 0;
+  pointer-events: none;
+}
+.modalpackWindow3:target {
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease-in 1s;
+}
+.msgTextpack3 {
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  background-color: lavenderblush;
+  top: 200px;
+  left: 600px;
+  padding: 20px;
+}
+.msgTextpack3 h3 {
+  /*background-color: #caa5f1;*/
+  background-color: MEDIUMSLATEBLUE;
+  padding: 10px;
+  /*color: #caa5f1;*/
+  color: lavender;
+  /*float: left;*/
+}
+.pack3div {
+  float: left;
+  /*border: solid blue;*/
+  width: 50%;
+  margin-top: 0%;
+  margin-right: 0px;
+  text-align: center;
+  line-height: 2;
+  color: steelblue;
+}
+.msgTextpack3 img {
+  margin-top: 0%;
+  width: 45%;
+  height: 60%;
+  float: right;
+}
+.msgTextpack3 p {
+  text-align: center;
+  color: steelblue;
+}
+.modal-closepack3 {
+  margin: 20px;
+  padding: 12px;
+  border-radius: 20px;
+  background-color: thistle;
+  color: white;
+  text-decoration: none;
+  float: right;
+}
+.modal-closepack3:hover {
+  color: red;
+  text-decoration: none;
+}
+.contact {
+  background-color: black;
+  width: 100%;
+  height: 300px;
+}
+.contact2 {
+  width: 100%;
+  height: 47%;
+  float: left;
+}
+.contact3 {
+  width: 100%;
+  height: 47%;
+  top: ;
+  float: left;
+}
+.text1 {
+  float: left;
+  width: 24%;
+  height: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.text2 {
+  float: left;
+  width: 24%;
+  height: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.text3 {
+  float: left;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.text4 {
+  float: left;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.contact hr {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.contact p {
+  text-align:;
+  color: lightgray;
+  margin-left: 10px;
+}
+.contact img {
+
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+.contact a {
+  text-decoration: none;
+}
+.copyright {
+  color: black;
+  text-align: center;
+}
+/*.nelly {
+  width: 80%;
+  height: 100%;
+  background-color: gold;
+  margin-left: 9%;
+} */
+/* Responsible to a tablet of 1024px width*/
+@media only screen and (max-width: 1024px) {
+  .logo {width: 30%;}
+  .companyname{width: 70%; font-size: 2em;}
+  .companyslogan{width: 70%; font-size: 12px;}
+  .slideshow{width: 100%;}
+  .imagewithtext{width: 100%; height: 200px;}
+  .message{width: 90%; left: 2%; font-size: 10px; top:55%;}
+  .heroImage{width: 100%; height: 200px;}
+  .herotext{width: 55%; height: 100px; font-size: 10px; top: 25%;}
+  .ourwine{width: 100%; font-size: 1.5em;}
+  .productcontainer{width: 100%; height: 300px;}
+  .redwine {margin-left: 0%; height: 300px; float: left; width: 33%;}
+  .redwine img {margin-left: 0%; float: left; height: 250px; width: 40%; margin-top: 10%;}
+  .redtext {margin-top: 30%; margin-right: 10%; font-size: 15px;}
+  .linkModal1 {margin-left: 10%; font-size: 10px;}
+  .msgText1 {width: 60%; left: 20%;}
+  .msgText1 img {margin-top: 0%; width: 25%;}
+  .wine1div{height: 300px; font-size: 14px;}
+  .whitewine {margin-left: 0%; height: 300px; float: left; width: 32%;}
+  .whitewine img{margin-left: 0%; float: left; height: 250px; width: 40%; margin-top: 10%;}
+  .whitetext {margin-top: 30%; margin-right: 10%; font-size: 15px;}
+  .linkModal2 {margin-left: 10%; font-size: 10px;}
+  .msgText2 {width: 60%; left: 20%;}
+  .msgText2 img {margin-top: 0%; width: 25%;}
+  .wine2div{height: 300px; font-size: 14px;}
+  .pinkwine {margin-left: 0%; height: 300px; float: left; width: 32%;}
+  .pinkwine img{margin-left: 0%; float: left; height: 250px; width: 40%; margin-top: 10%;}
+  .pinktext {margin-top: 30%; margin-right: 10%; font-size: 15px;}
+  .linkModal3 {margin-left: 8%; font-size: 10px;}
+  .msgText3 {width: 60%; left: 20%;}
+  .msgText3 img {margin-top: 0%; width: 25%;}
+  .wine3div{height: 300px; font-size: 14px;}
+  .giftstitle{}
+  .packcontainer{width: 100%; height: 500px;}
+  .pack1{height: 500px; width: 33%; float: left;}
+  .pack1 img{height: 200px; margin-top: 5%;}
+  .pack1text{height: auto; padding: 10px;}
+  .linkModalpack1{font-size: 12px; margin-left: 10px; border: solid rosybrown;}
+  .msgTextpack1{position: absolute; width: 700px; height: 500px; background-color: lavenderblush; top: 200px; left: 60px; padding: 20px;}
+  .msgTextpack1 img{width: 40%; height: 60%; margin-left: 55%; margin-top: -56%;}
+  .pack1div{height: 250px; font-size: 14px; float: left;}
+  .pack2 {height: 500px; width: 32%; float: left;}
+  .pack2 img{height: 200px; margin-top: 5%;}
+  .pack2text{height: 210px;}
+  .linkModalpack2{border: solid rosybrown; font-size: 10px;}
+  .msgTextpack2{position: absolute; width: 700px;height: 500px;background-color: lavenderblush;top: 200px; left: 60px; padding: 20px;}
+  .msgTextpack2 img{margin-top: 8%;width: 45%;height: 60%;float: right;}
+  .pack2div{float: left;width: 50%;margin-top: 0%;margin-right: 0px;text-align: center;line-height: 1.5;color: steelblue;}
+  .pack3 {height: 500px; width: 32%; float: left;}
+  .pack3 img{height: 200px; margin-top: 5%;}
+  .pack3text{height: 170px;}
+  .linkModalpack3{border: solid rosybrown; font-size: 5px;}
+  .msgTextpack3{position: absolute;width: 700px;height: 500px;background-color: lavenderblush;top: 200px;left: 60px;padding: 20px;}
+  .msgTextpack3 img{margin-top: 0%;width: 45%;height: 60%;float: right;}
+  .pack3div{float: left;width: 50%;margin-top: 0%;margin-right: 0px;text-align: center;line-height: 2;color: steelblue;}
+  .contact{width: 100%; height: 200px; font-size: 10px; }
+  .contact hr {margin-top: 100px;}
+  .contact p {}
+  .contact2{}
+  .contact3{}
+  .copyright{width: 100%; font-size: 12px;}
+}
+/* Responsive webpage of of 720px width*/
+@media only screen and (max-width: 720px) {
+  .logo {width: 20%;}
+  .companyname{width: 80%; font-size: 1em;}
+  .companyslogan{width: 80%; font-size: 8px;}
+  .slideshow{width: 100%; font-size: 12px;}
+  .imagewithtext{width: 100%; height: 200px;}
+  .message{width: 90%; left: 2%; font-size: 9px; top:50%;}
+  .heroImage{width: 100%; height: 200px;}
+  .herotext{width: 60%; height: 150px; font-size: 10px; top: 15%; line-height: 1.5;}
+  .contact{width: 100%; height: 180px; font-size: 10px; }
+  .contact hr {margin-top: 90px;}
+  .contact p {}
+  .contact2{}
+  .contact3{}
+  .copyright{width: 100%; font-size: 10px;}
+  .ourwine{width: 100%; font-size: 1.5em;}
+  .productcontainer{width: 100%; height: 200px;}
+  .redwine {margin-left: 0%; height: 200px; float: left; width: 30%;}
+  .redwine img {margin-left: 0%; float: left; height: 100px; width: 40%; margin-top: 10%;}
+  .redtext {margin-top: 30%; margin-right: 0%; font-size: 10px; margin-left: 40%;}
+  .linkModal1 {margin-left: 10%; font-size: 10px;}
+  .msgText1 {width: 70%; left: 10%; top: 0;}
+  .msgText1 img {margin-top: 0%; width: 25%; height: 200px;}
+  .wine1div{height: 300px; font-size: 12px; line-height: 1.5;}
+  .whitewine {margin-left: 0%; height: 200px; float: left; width: 30%;}
+  .whitewine img{margin-left: 0%; float: left; height: 100px; width: 40%; margin-top: 10%;}
+  .whitetext {margin-top: 30%; margin-right: 0%; font-size: 10px; margin-left: 40%;}
+  .linkModal2 {margin-left: 10%; font-size: 10px;}
+  .msgText2 {width: 60%; left: 10%; top:0; height: 450px;}
+  .msgText2 img {margin-top: 0%; width: 25%; height: 200px;}
+  .wine2div{height: 30px; font-size: 12px;line-height: 1.5;}
+  .pinkwine {margin-left: 0%; height: 200px; float: left; width: 30%;}
+  .pinkwine img{margin-left: 0%; float: left; height: 100px; width: 40%; margin-top: 10%;}
+  .pinktext {margin-top: 30%; margin-right: 0%; font-size: 10px; margin-left: 40%;}
+  .linkModal3 {margin-left: 8%; font-size: 10px;}
+  .msgText3 {width: 60%; left: 10%; top:0;}
+  .msgText3 img {margin-top: 0%; width: 25%; height: 200px;}
+  .wine3div{height: 30px; font-size: 12px; line-height: 1.5;}
+  .giftstitle{}
+  .packcontainer{width: 100%; height: 270px;}
+  /*correct*/.pack1{height: 300px; width: 30%; float: left;}
+  .pack1 img{height: 100px; margin-top: 5%; margin-left: 2%;}
+  .pack1text{height: auto; padding: 10px; font-size: 10px;}
+  .linkModalpack1{font-size: 12px; margin-left: 10px; border: solid rosybrown;}
+  .msgTextpack1{position: absolute; width: 450px;height: 500px; background-color: lavenderblush; top: 0px; left: 6px; padding: 20px;}
+  .msgTextpack1 img{top: 0;width: 45%;height: 50%;float: right;}
+  .pack1div{height: 250px; font-size: 14px; float: left;}
+  .pack2 {height: 300px; width: 30%; float: left;}
+  .pack2 img{height: 100px; margin-top: 5%; margin-left: 2%;}
+  .pack2text{height: auto; font-size: 10px;}
+  .linkModalpack2{border: solid rosybrown; font-size: 10px;}
+  /*correct*/.msgTextpack2{position: absolute; width: 450px;height: 500px; background-color: lavenderblush; top: 0px; left: 6px; padding: 20px;}
+  /*correct*/.msgTextpack2 img{top: 0;width: 45%;height: 40%;float: right;}
+  .pack2div{height: 50px; float: left;width: 50%;margin-top: 0%;margin-right: 0px;text-align: center;line-height: 1.5;color: steelblue;}
+  .pack3 {height: 300px; width: 30%; float: left;}
+  .pack3 img{height: 100px; margin-top: 5%; margin-left: 2%;}
+  .pack3text{height: auto; font-size: 10px;}
+  .linkModalpack3{border: solid rosybrown; font-size: 5px;}
+  .msgTextpack3{position: absolute; width: 450px;height: 500px; background-color: lavenderblush; top: 0px; left: 6px; padding: 20px;}
+  .msgTextpack3 img{top: 0;width: 45%;height: 50%;float: right;}
+  .pack3div{float: left;height:50px;width: 50%;margin-top: 0%;margin-right: 0px;text-align: center;line-height: 2;color: steelblue;}
+  .contact3 img {height: 20px; width: 20px;}
+}
