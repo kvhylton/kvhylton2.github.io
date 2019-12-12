@@ -1,0 +1,281 @@
+body {
+  padding: 10px;
+  box-sizing: border-box;
+}
+.p1 {
+  background-color: LightCoral;
+  padding: 12px;
+}
+.p2 {
+  background-color: SteelBlue;
+  padding: 12px;
+}
+.p3 {
+  background-color: MediumVioletRed;
+  padding: 12px;
+}
+.p4 {
+  background-color: rgb(226,102,10);
+  padding: 12px;
+}
+.p5 {
+  background-color: rgb(10,240,252);
+  padding: 12px;
+}
+.p6{
+  background-color: rgb(236,254,7);
+  padding: 12px;
+}
+.p7 {
+  background-color: #8B008B;
+  padding: 12px;
+}
+.p8 {
+  background-color: #1E90FF;
+  padding: 12px;
+}
+.p9 {
+  background-color: #DDA0DD;
+  padding: 12px;
+}
+.p10{
+  background-color: rgba(226,102,10, 0.1);
+  padding: 12px;
+}
+.p11 {
+  background-color: rgba(226,102,10, 0.5);
+  padding: 12px;
+}
+.p12 {
+  background-color: rgba(226,102,10, 1);
+  padding: 12px;
+}
+.gradient1 {
+  height: 200px;
+  background-image: linear-gradient(LightCoral, SteelBlue);
+}
+.gradient2 {
+  height: 200px;
+  background-image: linear-gradient(to bottom left, midnightblue, cyan);
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.img1 {
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+.rosetitle {
+  width: 300px;
+  position: absolute;
+  top: 0px;
+  left: 80px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+.textrose {
+  width: 300px;
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
+  font-size: 3em;
+  color: white;
+}
+.heroimage {
+  background-image: linear-gradient(rgba(10,240,252,0.6), rgba(236,254,7, 0.5)) , url("images/rose.jpg");
+  background-repeat: no-repeat;
+  background-size: 60% 60%;
+  height: 900px;
+  width: 900px;
+  position: relative;
+}
+.herotext {
+
+  width: 50%;
+  height: 20%;
+  position: absolute;
+  left: 5%;
+  bottom: 50%;
+  color: white;
+  text-align: center;
+}
+.submit {
+  color: lightgray;
+  text-decoration: none;
+  display: inline-block;
+  margin: 60px;
+  background-color: rgba(10,240,252,0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+.submit:hover {
+  background-color: white;
+  color: red;
+  box-shadow: 0px 0px 5px 2px red;
+}
+.filtercontainer {
+  height: 1000PX;
+  width: 1000px;
+  margin:auto;
+  border: solid red;
+}
+.filtercontainer img {
+  width: 40%;
+  height: 40%;
+  margin: 20px;
+}
+.blur1 {
+  filter: blur(1px);
+
+}
+.blur2 {
+  filter: blur(5px);
+}
+.blur3 {
+  filter: blur(10px);
+}
+.blur4 {
+  filter: blur(20px);
+}
+
+/* CONTRAST FILTER*/
+
+.con1 {
+  filter: contrast(0%);
+}
+.con2 {
+  filter: contrast(30%);
+}
+.con3 {
+  filter: contrast(60%);
+}
+.con4 {
+  filter: contrast(100%);
+}
+ /*INVERT IMAGES*/
+
+ .in1 {
+   filter: invert(0%);
+ }
+ .in2 {
+   filter: invert(30%);
+ }
+ .in3 {
+   filter: invert(60%);
+ }
+ .in4 {
+   filter: invert(100%);
+ }
+
+
+/*IN-CLASS ACTIVITY*/
+.bridgeimage {
+  width: 40%;
+  height: 650px;
+  margin: auto;
+  position: relative;
+  filter: invert(100%);
+}
+.bridgetext {
+  position: absolute;
+  top: 70%;
+  left: 12%;
+  width: 70%;
+  background-color: rgba(0,0,0,0.8)
+  color: white;
+  padding: 20px;
+  font-size: 15px;
+  border: solid white;
+}
+.bridgetitle {
+  font-size: 1.5em;
+}
+.empireimage {
+  background-image: url("images/empire.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40% 100%;
+  height: 700px;
+  position: relative;
+}
+.empiretext {
+  position: absolute;
+  top: 35%;
+  left: 34%;
+  width: 30%;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 5px 5px 5px white;
+  padding: 10px;
+}
+.empiretitle {
+  font-size: 1.5em;
+  color: red;
+  font-weight: bold;
+}
+.empiresubmit {
+  padding: 10px 25px;
+  color: white;
+  background-color: red;
+  font-weight: 600;
+  font-size: 18px;
+  margin: auto;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  display: inline-block;
+}
+a.empiresubmit {
+  text-decoration: none;
+}
+.grandimage {
+  background-image: linear-gradient(to bottom, rgba(31,171,137,0.5), rgba(255,128,128,0.5)), url(images/grand.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40% 100%;
+  height: 700px;
+  position: relative;
+}
+.grand1 {
+  width: 300px;
+  top: 40%;
+  left: 37%;
+  position: absolute;
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+.grand2 {
+  width: 400px;
+  position: absolute;
+  top: 5px;
+  left: 32%;
+  font-size: 18px;
+  color: white;
+}
+.grand3 {
+  width: 400px;
+  position: absolute;
+  top: 20%;
+  right: 26%;
+  font-size: 18px;
+  color: white;
+}
+.grand4 {
+  width: 400px;
+  position: absolute;
+  bottom: 35px;
+  right: 30%;
+  font-size: 18px;
+  color: white;
+}

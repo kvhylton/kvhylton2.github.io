@@ -1,0 +1,215 @@
+body {
+  padding: 10px;
+}
+.linkModal {
+  text-align: center;
+  background-color: #bc5090;
+  font-size: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 10px;
+}
+.linkModal:hover {
+  background-color: #003f5c;
+  color: #ff6361;
+}
+.modalWindow {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(228,44,100,0.2);
+  opacity: 0;
+  pointer-events: none;
+}
+.modalWindow:target {
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease-in 1s;
+}
+.msgText {
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  background-color: white;
+  top: 200px;
+  left: 600px;
+  padding: 20px;
+}
+.msgText h3 {
+  background-color: #caa5f1;
+  padding: 10px;
+  color: white;
+}
+.msgText img {
+  width: 35%;
+  margin-left: 35%;
+}
+.modal-close {
+  padding: 12px;
+  color: #59d4e8;
+  text-decoration: none;
+}
+.modal-close:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/*CLASS ACTIVITY*/
+/*
+.container {
+  border: solid red;
+  width: 100%;
+  height: 800px;
+}
+*/
+.item1 {
+  /* border: solid blue; */
+  width: 50%;
+  height: 800px;
+  float: left;
+}
+.item2 {
+  /* border: solid green; */
+  height: 800px;
+  width: 50%;
+  float: left;
+}
+ img {
+   width: 50%;
+   margin-left: 25%;
+   margin-top: 10%;
+ }
+h5 {
+  text-align: center;
+  font-style: italic;
+  font-family: arial;
+  color: blue;
+}
+.item1 p {
+  text-align: center;
+  font-family: arial;
+}
+.price1 {
+  color: red;
+}
+.price1 s {
+  color: black;
+}
+.item1 a {
+  text-align: center;
+  background-color: rgba(0,0,0,0.6);
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.item2 p {
+  text-align: center;
+  font-family: arial;
+}
+.item2 a {
+  text-align: center;
+  background-color: rgba(0,0,0,0.6);
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.linkModal2 {
+  text-align: center;
+  background-color: #bc5090;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+}
+.modalWindow2 {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.2);
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+}
+.modalWindow2:target {
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease-in 1s;
+}
+.msgText2 {
+  position: absolute;
+  width: 700px;
+  height: 650px;
+  background-color: white;
+  top: 100px;
+  left: 600px;
+  padding: 20px;
+}
+.msgText2 h3 {
+  padding: 10px;
+}
+.msgText2 img {
+  width: 35%;
+  margin-left: 35%;
+}
+.modal-close2, .viewbag {
+  padding: 12px;
+  text-decoration: none;
+}
+.modal-close2:hover, .viewbag:hover {
+  text-decoration: underline;
+}
+
+/* ITEM2*/
+
+.linkModal3 {
+  text-align: center;
+  background-color: #bc5090;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+}
+.modalWindow3 {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.2);
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+}
+.modalWindow3:target {
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease-in 1s;
+}
+.msgText3 {
+  position: absolute;
+  width: 700px;
+  height: 650px;
+  background-color: white;
+  top: 200px;
+  left: 600px;
+  padding: 20px;
+  text-align: center;
+}
+.msgText3 h3 {
+  padding: 10px;
+  text-align: left;
+}
+.msgText3 img {
+  width: 35%;
+  margin-left: 35%;
+}
+.modal-close3, .viewbag2 {
+  padding: 12px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  text-decoration: none;
+}
+.modal-close3:hover, .viewbag2:hover {
+  text-decoration: none;
+  background-color: rgba(0,0,0,0.5)
+}

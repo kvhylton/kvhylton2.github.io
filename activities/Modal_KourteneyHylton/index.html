@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <title>Modal Windows by Kourteney Hylton</title>
+  </head>
+  <body>
+    <a href="#openModal" class="linkModal">Open Modal Link</a>
+
+    <!--modal window openModal-->
+    <div class="modalWindow" id="openModal">
+      <div class="msgText">
+        <h3>Modal Window by Kourteney Hylton</h3>
+        <p>This is a paragraph in the message window. You could do a lot of things in here like have a pop-up that shows promotion information, images or create a login/register from users.</p>
+        <img src="images/candle.jpg" alt="Candle">
+        <br>
+        <a href="#" class="modal-close">CLOSE</a>
+      </div>
+    </div>
+
+    <!--CLASS ACTIVITY-->
+    <div class="container"> <!--CONTAINER-->
+      <div class="item1"> <!-- BEGINNING OF ITEM1 DIV-->
+      <img src="images/peach.jpg" alt="soap" title="Go to Product: Cranberry Peach Gentle Foaming Handsoap">
+        <h5>NEW!</h4>
+        <p>CRANBERRY PEACH</p>
+        <p>Gentle Foaming Hand Soap</p>
+        <p class="price1"> <s>$6.50</s> $3.00 </p>
+        <p><a href="#openModal2" class="linkModal2">ADD TO BAG</a></p>
+
+        <div class="modalWindow2" id="openModal2"> <!-- MODAL WINDOW DIV START-->
+          <div class="msgText2"> <!-- DIV MESSAGE TEXT START-->
+            <h3>IT'S IN THE BAG!</h3> <a href="#">X</a>
+            <hr>
+            <p>CRANBERRY PEACH</p>
+            <p>Gentle Foaming Hand Soap</p>
+            <img src="images/peach.jpg" alt="">
+            <br>
+            <a href="#" class="modal-close2">CONTINUE SHOPPING</a>
+            <a href="#" class="viewbag">VIEW BAG & CHECKOUT</a>
+          </div> <!-- DIV MESSAGE TEXT END-->
+        </div> <!-- MODAL WINDOW DIV END-->
+      </div> <!--END OF ITEM1 DIV-->
+
+      <div class="item2">
+      <img src="images/winter.jpg" alt="soap" title="Go to Product: Winter Gentle Foaming Handsoap">
+        <h5>NEW!</h4>
+        <p>WINTER</p>
+        <p>Gentle Foaming Hand Soap</p>
+        <p class="price1"> <s>$6.50</s> $3.00 </p>
+        <p><a href="#openModal3" class="linkModal3">ADD TO BAG</a></p>
+      </div>
+    </div> <!--END OF CONTAINER-->
+
+
+      <div class="modalWindow3" id="openModal3">
+        <div class="msgText3">
+          <h3>IT'S IN THE BAG</h3>
+          <hr>
+          <p>WINTER</p>
+          <p>Gentle Foaming Hand Soap</p>
+          <img src="images/winter.jpg" alt="">
+          <br>
+          <a href="#"class="modal-close3">CONTINUE SHOPPING</a>
+          <a href="#" class="viewbag2">VIEW BAG & CHECKOUT</a>
+        </div>
+      </div>
+
+  </body>
+</html>

@@ -7,28 +7,102 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Modal Using Bootstrap</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <title>Project 3 by Kourteney Hylton</title>
   </head>
-  <body>
-    <div class="container">
-      <h3>Modal Window</h3>
-      <!-- BUTTON TO OPEN THE MODAL WINDOW-->
-        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Open Modal Window</button>
-        <!--THE MODAL-->
-        <div class="modal" id="myModal">
+  <body data-spy="scroll" data-target="#navbar-site">
+    <!--SCROLLSPY NAVIGATION TABS-->
+    <nav id="navbar-site" class="fixed-top navbar navbar-dark bg-dark navbar-expand-md">
+      <button type="button" name="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapseTab1" aria-controls="collapseTab1" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapseTab1">
+        <div class="container">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#about" class="nav-link">About Roz</a></li>
+          <li class="nav-item"><a href="#proj" class="nav-link">Web Technology Projects</a></li>
+          <li class="nav-item"><a href="#act" class="nav-link">Class Activities</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact Roz</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <div class="intro" id="about">
+      <div class="introtext">
+        <h1 class="zoomtext">Roz Hylton</h1>
+        <p>Hello and Welcome to my personal website. I am a Computer Engineering Technology student from the Engineering Technology department at Queensborough Commmunity College. Through this webpage I will present my work and projects that I have learned and done in my Web Technology 1 cass. After receiving my Associate degree from Queensborough Community College, I plan on attenting a four year university to then get my Bachelor's degree in Computer Engineering. I hope you enjoy.</p>
+      </div><!--END OF INTRO TEXT DIV-->
+      <div class="introimg">
+        <img src="images/major.jpg" alt="computer enigneering major" title="Major: Computer Engineering Technology">
+      </div><!--END OF INTRO IMG DIV-->
+    </div><!--END OF INTRO DIV-->
+    <br>
+    <div class="secondimg">
+      <img src="images/major2.jpg" alt="computer engineering">
+    </div>
+    <br>
+
+    <div class="carousel slide carouselSize"  data-ride="carousel" id="slideshow">
+
+      <div class="carousel-item active" >
+        <img src="images/html.jpg" alt="Manhattan" title="Manhattan" class="img-thumbnail">
+        <div class="carousel-caption captionCSS">
+          <h3>HTML <small>"HyperText Markup Language"</small> </h3>
+          <p>At the beginning of the course, we learned how to create structures using HTML</p>
+        </div>
+      </div>
+
+      <div class="carousel-item" >
+        <img src="images/css.jpg" alt="Brooklyn" title="Brooklyn" class="img-thumbnail">
+        <div class="carousel-caption captionCSS">
+          <h3>CSS <small>"Cascading Style Sheets"</small> </h3>
+          <p>After learning how to use HTML, we moved on to learning how to use CSS to style elements.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/bootstrap.jpg" alt="Queens" title="Queens" class="img-thumbnail">
+        <div class="carousel-caption captionCSS">
+          <h3>Bootstrap</h3>
+          <p>After doing HTML and CSS we learned how to work with classes in Bootstrap 4. Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>
+        </div>
+      </div>
+
+
+
+      <!--LEFT AND RIGHT CONTROLS-->
+      <a href="#slideshow" data-slide="prev" class="carousel-control-prev"><span class="carousel-control-prev-icon"></span> </a>
+      <a href="#slideshow" data-slide="next" class="carousel-control-next"><span class="carousel-control-next-icon"></span> </a>
+
+      <!--INDICATORS-->
+      <ul class="carousel-indicators">
+        <li data-target="#slideshow" data-slide-to="0"></li>
+        <li data-target="#slideshow" data-slide-to="1"></li>
+        <li data-target="#slideshow" data-slide-to="2"></li>
+      </ul>
+    </div> <!--END OF CAROUSEL-->
+
+    <h3 id="proj" class="titleheading">Web Technology Projects</h3>
+      <div class="row">
+        <div class="col-md-6 techproj">
+          <a href="#myModal" data-toggle="modal"><div class="card1" style="padding:20px;"> <img src="images/project1.png" alt="project 1" title="HTML Project: Dreaming Places" style="width:100%; border: solid grey 1px;" class="projimg">
+          <h4>HTML Project: Dreaming Places</h4></div></a>
+
+          <div class="modal" id="myModal">
           <div class="modal-dialog">
             <div class="modal-content">
               <!--modal header-->
-              <div class="modal-header bg-info">
-                <h4>This is the title of the modal window</h4>
+              <div class="modal-header">
+                <h4 style="font-family:rockwell;">HTML Project: Dreaming Places</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div><!--END OF MODAL HEADER-->
               <!--modal body-->
               <div class="modal-body">
-                <h6>New York City <small>The Big Apple</small></h6>
-                <img src="nyc.jpg" alt="NYC" title="New York City" style="width:100%">
-                <p>This paragraph describes New York City</p>
+                <h6></h6>
+                <img src="project1/images/photos/bangkok.jpg" alt="project1" title="HTML Project: Dreaming Places" style="width:100%">
+                <p style="font-family:times-new-roman">Project 1 was about creating an informative website. The information is about a place(city, country, or state) that you want to inform people about. <br><br> I created a website about <i><b>Thailand</b></i>. I chose Thailand because it's somewhere I've never been and it seemed interesting. I've always been interested in learning about the cultutes and history of other places. Thailand is just one of the many places I dream of visiting. In the website I mentioned visiting Bangkok and Chiang Mai. Both places are rich in culture and full of activities for tourists to take part in. <br><br> <a href="project1/index.html" target="_blank">Visit my <b>Thailand</b> Project</a> </p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -36,7 +110,116 @@
             </div><!--END OF MODAL CONTENT-->
           </div><!--END OF MODAL DIALOG-->
         </div><!--END OF MODAL-->
-    </div><!--END OF CONTAINER-->
+        </div>
+        <div class="col-md-6 techproj">
+          <a href="#myModal2" data-toggle="modal"><div class="card1" style="padding:20px;"><img src="images/project2.png" alt="project 2" title="HTML and CSS Project: Sales Website" style="width:100%; border: solid grey 1px;" class="projimg">
+          <h4>HTML and CSS Project: Sales Website</h4> </div></a>
+
+          <div class="modal" id="myModal2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!--modal header-->
+              <div class="modal-header">
+                <h4 style="font-family:rockwell;">HTML and CSS Project: Sales Website</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div><!--END OF MODAL HEADER-->
+              <!--modal body-->
+              <div class="modal-body">
+                <img src="images/project2.png" alt="project 2" title="HTML and CSS Project: Sales Website" style="width:100%">
+                <p style="font-family:times-new-roman">Project 2 was about creating a sales website. The purpose of this project was to apply the knowledge pf colors, images manipulation, animation, slideshow, and modal window using CSS to create a simple sales page. <br><br> I created a website about Xan's Vineyard and Winery. In this project I presented wine for sale. I created a slideshow in the introduction to advertise the product sales, and hero images to present the products. I put three wines and three wine gifts in the product list with a modal window for each. <br><br> <a href="project2/index.html" target="_blank">Visit My <b>Xan's Vineyard and Winery</b> Project</a> </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div><!--END OF MODAL CONTENT-->
+          </div><!--END OF MODAL DIALOG-->
+        </div><!--END OF MODAL-->
+        </div>
+      </div>
+      <br><br>
+
+
+
+
+    <h3 id="act" class="titleheading">Class Activities</h3>
+
+    <div class="container">
+      <div class="row rowCard"><!-- FIRST ROW-->
+        <div class="col-md-4">
+          <div class='card card-body'>
+            <img class="card-img img-fluid" src="images/html2.jpg" title="New York City">
+            <h2 class='card-title'>HTML</h2>
+            <h5 class='card-subtitle'>Class Activities</h5>
+            <p class='card-text'>At the beginning of this course I learned how to create structures using only HTML.</p>
+              <div class='list-group list-group-flush'>
+                <a class='list-group-item' href="activities/activity2_Hylton/index.html" target="_blank">HTML Activity 1: Table</a>
+                  </div>
+                </div><!-- end of card-->
+              </div><!-- end of col-->
+        <div class="col-md-4">
+          <div class='card card-body'>
+            <img class="card-img img-fluid" src="images/css2.jpg" title="New York City">
+            <h2 class='card-title'>CSS</h2>
+            <h5 class='card-subtitle'>Class Activities</h5>
+            <p class='card-text'>After learning how to use HTML, we learned about CSS and how to use it to style elements.</p>
+              <div class='list-group list-group-flush'>
+                <a class='list-group-item' href="activities/activity3_Hylton/index.html" target="_blank">CSS Activity 1: Basic CSS Attributes</a>
+                <a class='list-group-item' href="activities/animation_KourteneyHylton/index.html" target="_blank">CSS Activity 2: Animation</a>
+                <a class='list-group-item' href="activities/colors_KourteneyHylton/index.html" target="_blank">CSS Activity 3: Images manipulation</a>
+                <a class='list-group-item' href="activities/Modal_KourteneyHylton/index.html" target="_blank">CSS Activity 4: Modal Window</a>
+                  </div>
+                </div><!-- end of card-->
+              </div><!-- end of col-->
+        <div class="col-md-4">
+          <div class='card card-body'>
+            <img class="card-img img-fluid" src="images/bootstrap2.jpg" title="New York City">
+            <h2 class='card-title'>Bootstrap</h2>
+            <h5 class='card-subtitle'>Class Activities</h5>
+            <p class='card-text'>After learning and understanding how to use HTML and CSS we moved on to learning how to use classes in Bootstrap. Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>
+              <div class='list-group list-group-flush'>
+                <a class='list-group-item' href="activities/layout_KourteneyHylton/index.html" target="_blank">Bootstrap Activity 1: Layout and Cards</a>
+                <a class='list-group-item' href="activities/navbarActivity_KourteneyHylton/index.html" target="_blank">Bootstrap Activity 2: Navigation Bars and Information Window</a>
+                <a class='list-group-item' href="activities/Collapsable_Slideshow_KourteneyHylton/index.html" target="_blank">Bootstrap Activity 3: Modal Window Collapsable and Carousel</a>
+                  </div>
+                </div><!-- end of card-->
+              </div><!-- end of col-->
+            </div><!-- end FIRST ROW -->
+
+
+                        <div class="contact" id="contact">
+                              <div class="contact2">
+                                <div class="text1">
+                                   PHONE NUMBER <br> <br> (222)-345-6789
+                                </div>
+                                <div class="text2">
+                                  EMAIL <br> <br> rozhyl@gmail.com
+                                </div>
+                                <div class="text3">
+                                  ADDRESS <br><br> 222-05 56th Ave, Bayside, NY 11364
+                                </div>
+                                <div class="text4">
+                                  OFFICE <br> <br> Student Center
+                                </div>
+                              </div>
+                              <br>
+                              <hr>
+                              <div class="contact3">
+                              <p>CONNECT WITH ROZ</p>
+                              <a href="https://www.facebook.com" target="_blank"> <img src="images/icons/facebook.png" alt=""> </a>
+                              <a href="https://www.instagram.com" target="_blank"> <img src="images/icons/instagram.png" alt=""> </a>
+                              <a href="https://www.youtube.com" target="_blank"> <img src="images/icons/youtube.png" alt=""> </a>
+                              <a href="https://www.pinterest.com" target="_blank"> <img src="images/icons/pinterest.png" alt=""> </a>
+                              <a href="https://www.twitter.com" target="_blank"> <img src="images/icons/twitter.png" alt=""> </a>
+                            </div>
+                            </div>
+                          <br> <br>
+                            <hr>
+                            <div class="copyright">
+                            ©2019 Roz Hylton Portfolio by Kourteney Hylton. All Rights Reserved.
+                            <br>
+                            NOTE: This webpage is a template to create a Portfolio. All information and materials used are ONLY for educational purposes.
+                          </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -45,4 +228,3 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
-

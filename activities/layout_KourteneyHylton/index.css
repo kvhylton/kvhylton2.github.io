@@ -1,0 +1,5 @@
+body{padding: 20px;}
+.card1{margin: 20px; border: solid white 2px; padding: 10px; box-shadow: 4px 4px 5px gray; box-sizing: border-box; text-align: center;}
+.row{margin:30px;}
+a:hover{background-color: black;}
+.card{margin: 20px; border: solid black 1px; padding: 10px;}

@@ -1,0 +1,8 @@
+body{padding:10px;}
+.collapseNYC{background-color:azure; padding:20px;}
+.collapseNYC img{width:30%; height:200px; margin:10px;}
+.collapseBor img{width: 50%;}
+.collapseBor figure{padding-top: 20px;}
+.carouselSize{width: 700px; height: 600px;}
+.carouselSize img{width: 100%; height: 100%;}
+.captionCSS{border-radius: 20px; padding: 20px; background-color: RGBA(70, 130, 180, 0.5); font-size: 20px;}
